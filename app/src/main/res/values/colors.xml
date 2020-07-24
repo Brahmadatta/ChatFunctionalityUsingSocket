@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <array name="array_dot_active">
+        <item>@color/text_color</item>
+        <item>@color/text_color</item>
+        <item>@color/text_color</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen3</item>
+
+    </array>
+    <color name="colorPrimary">#FFFFFF</color>
+
+    <color name="colorPrimaryDark">#B798A9BC</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="memories_color">#dd4773</color>
+
+    <color name="love_color">#f47b63</color>
+    <color name="calendar_event_color">#FC5B62</color>
+    <color name="behaviour_color">#3281c4</color>
+    <color name="bottom_nav_default_color">#D1D6DF</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="text_color">#3281C4</color>
+    <color name="white">#FFF</color>
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+
+    <!-- dots active colors -->
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+
+
+    <color name="dot_light_screen3">#93c6fd</color>
+
+    <color name="dot_light_screen4">#e4b5fc</color>
+    <color name="text_black_color">#252631</color>
+    <color name="remember_me_color">#778CA2</color>
+    <color name="edittext_background_color">#E8ECEF</color>
+    <color name="black">#000</color>
+
+
+    <color name="bottom_nav_checked_color">#FFD452</color>
+    <color name="ash">#DFDFDF</color>
+    <color name="shadow_color">#00000029</color>
+    <color name="error_message_color">#FC5B62</color>
+    <color name="background_edittext">#F9F9F9</color>
+    <color name="button_text_color">#F8FAFB</color>
+    <color name="profile_tiles_background">#F0F6FF</color>
+    <color name="relationship_text_color">#3D3C3C</color>
+    <color name="success_messsage_color">#32C46C</color>
+    <color name="error_message_color_life_event">#F13131</color>
+    <color name="profile_text_color">#939CAD</color>
+    <color name="unfriend_color">#F81717</color>
+    <color name="today_event_color">#dd4773</color>
+
+</resources>

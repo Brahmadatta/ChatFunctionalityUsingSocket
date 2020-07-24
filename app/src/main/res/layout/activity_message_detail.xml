@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessageDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/back_button_message_detail"
+                android:padding="@dimen/dimen_12dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="8"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/userNameMessageDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="start|center"
+                    android:layout_weight="6"
+                    android:gravity="center"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_18sp"
+                    tools:ignore="NestedWeights" />
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:id="@+id/typing_status"
+                    android:gravity="center"
+                    android:layout_gravity="start|center"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_12sp"
+                    tools:ignore="NestedWeights" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/dimen_2dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_30dp"
+                    android:padding="@dimen/dimen_8dp"
+                    android:layout_gravity="bottom"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_8sp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="@dimen/dimen_2dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_30dp"
+                    android:padding="@dimen/dimen_8dp"
+                    android:layout_gravity="bottom"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_8sp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/dimen_10dp"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messages_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messages_recyclerView">
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/input_message"
+            android:padding="@dimen/dimen_10dp"
+            android:inputType="text|textMultiLine"
+            android:maxLength="2000"
+            android:maxLines="5"
+            android:scrollbars="vertical"
+            />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_weight="8.7"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginEnd="@dimen/dimen_5dp"
+            android:weightSum="10">
+
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_20dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                tools:ignore="NestedWeights" />
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:textColor="@color/black"
+                android:id="@+id/input_messagxe"
+                android:lines="5"
+                android:minLines="1"
+                android:gravity="top|start"
+                android:maxLines="20"
+                android:scrollbars="none"
+                android:inputType="textMultiLine|textCapSentences"
+                />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="@dimen/dimen_5dp"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="@dimen/dimen_5dp"/>
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="@dimen/dimen_5dp"/>
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="@dimen/dimen_5dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:layout_height="@dimen/dimen_45dp"
+            android:layout_gravity="center"
+            android:id="@+id/send_layout"
+            android:layout_marginEnd="@dimen/dimen_5dp"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/send_message"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="@dimen/dimen_10dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

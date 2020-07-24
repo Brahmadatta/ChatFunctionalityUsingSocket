@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_5dp">
+
+    <LinearLayout
+        android:id="@+id/chat_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/chat_id_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_5dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/username"
+                style="?android:textAppearanceMedium"
+                android:textColor="?android:textColorPrimary"
+                android:layout_width="wrap_content"
+                android:text="@string/app_name"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:textStyle="bold"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_pic_chat"
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:visibility="gone"
+                android:src="@drawable/default_profile_icon"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/message"
+                    android:text="@string/app_name"
+                    android:textColor="?android:textColorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:gravity="center|start"
+                    android:inputType="textMultiLine"
+                    android:fontFamily="@font/rubik_regular"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/message_time"
+            android:layout_width="match_parent"
+            android:text="@string/app_name"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_12sp"
+            android:fontFamily="@font/rubik_regular"
+            android:padding="@dimen/dimen_5dp"
+            android:singleLine="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/typing_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/typing_text"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:textSize="@dimen/text_20sp"
+            android:fontFamily="@font/rubik_regular"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_10dp"
+        android:id="@+id/my_chat_id"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="@drawable/chat_background_me">
+
+
+        <TextView
+            android:id="@+id/username_me"
+            style="?android:textAppearanceMedium"
+            android:textColor="?android:textColorPrimary"
+            android:layout_width="wrap_content"
+            android:text="@string/app_name"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/message_me"
+            android:text="@string/app_name"
+            style="?android:textAppearanceMedium"
+            android:textColor="?android:textColorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

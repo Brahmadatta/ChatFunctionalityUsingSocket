@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Bottom 2dp Shadow -->
+    <item >
+        <shape  android:shape="rectangle">
+
+            <solid android:color="@color/profile_text_color" />
+            <corners android:radius="@dimen/dimen_10dp"
+                android:bottomRightRadius="0dp"/>
+
+        </shape>
+    </item>
+
+    <!-- White Top color -->
+    <item android:bottom="3dp">
+
+        <shape  android:shape="rectangle">
+
+            <solid android:color="@color/text_color" />
+            <corners android:radius="@dimen/dimen_10dp"
+                android:bottomRightRadius="0dp"
+                />
+            <padding
+                android:bottom="@dimen/dimen_10dp"
+                android:left="@dimen/dimen_10dp"
+                android:right="@dimen/dimen_10dp"
+                android:top="@dimen/dimen_10dp"/>
+
+
+        </shape>
+
+    </item>
+
+
+</layer-list>
+<!--
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <rotate
+        android:fromDegrees="45"
+        android:pivotX="100%"
+        android:pivotY="0%"
+        android:toDegrees="0" >
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/text_color" />
+        </shape>
+    </rotate>
+</item>
+<item android:right="16dp">
+    <shape android:shape="rectangle" >
+        <solid android:color="@color/text_color" />
+        <corners android:radius="4dp" />
+    </shape>
+</item>
+</layer-list>-->
